@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@id/rlayoutNavbar"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="@drawable/nav_bg" >
+
+        <TextView
+            android:id="@id/textNavbarTitle"
+            style="@style/navigation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="44.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="44.0dip"
+            android:gravity="center_vertical"
+            android:text="分类" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="44.0dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rllistviewSortl"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_grid_sort_n" >
+
+            <TextView
+                android:id="@+id/tvRefresh"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="重试"
+                android:visibility="gone" />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/listviewSort"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:orientation="vertical" />
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listviewSort2"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"
+            android:background="@android:color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEmpty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="44.0dip"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20.0dip"
+            android:paddingTop="20.0dip"
+            android:text="点击重试" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/llayoutOverView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="44.0dip"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</RelativeLayout>

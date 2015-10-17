@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/llMian"
+    android:layout_width="106.0dip"
+    android:layout_height="120.0dip"
+    android:background="@drawable/bg_grid_bottom_right"
+    android:orientation="vertical"
+    android:padding="0.5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/ivMian_AbLayout"
+            android:layout_width="84.0dip"
+            android:layout_height="84.0dip" >
+
+            <ImageView
+                android:id="@+id/ivHome3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_goods" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_goods_mask" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="进口菲律宾凤梨2枚装"
+            android:textColor="@color/gray666"
+            android:textSize="12.0dip"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:gravity="bottom|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15.0dip"
+                android:gravity="center_vertical"
+                android:text="¥"
+                android:textColor="@color/red"
+                android:textSize="10.0dip" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="15.0dip"
+                android:gravity="center_vertical"
+                android:text="23.33"
+                android:textColor="@color/red"
+                android:textSize="12.0dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="15.0dip"
+                android:gravity="center_vertical"
+                android:text="/33g"
+                android:textColor="#ffcccccc"
+                android:textSize="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

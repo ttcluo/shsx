@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32.0dip" >
+
+        <TextView
+            android:id="@+id/tvTitel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="限时抢购"
+            android:textColor="@color/gray666"
+            android:textSize="14.0dip"
+            android:textStyle="bold" />
+<!-- com.gem.tastyfood.widget.TearDownLinearLayout --> 
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:layout_toRightOf="@+id/tvTitel" />
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-4.0dip"
+            android:src="@drawable/indicator_right" />
+
+        <TextView
+            android:id="@+id/tvMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-10.0dip"
+            android:layout_toLeftOf="@+id/ivRight"
+            android:text="查看预告"
+            android:textColor="@color/gray999"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90.0dip" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsvMian"
+            android:layout_width="match_parent"
+            android:layout_height="90.0dip"
+            android:background="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/llMian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

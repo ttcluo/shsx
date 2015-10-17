@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44.0dip"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <EditText
+                android:id="@+id/EditUserName"
+                android:layout_width="match_parent"
+                android:layout_height="36.0dip"
+                android:background="@drawable/cell_bg"
+                android:hint="用户名"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true"
+                android:textColorHint="#ff999999"
+                android:textSize="12.0dip" />
+
+            <EditText
+                android:id="@+id/EditPsd"
+                android:layout_width="match_parent"
+                android:layout_height="36.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/cell_bg"
+                android:hint="请输入密码"
+                android:paddingLeft="10.0dip"
+                android:password="true"
+                android:singleLine="true"
+                android:textColorHint="#ff999999"
+                android:textSize="12.0dip" />
+
+            <Button
+                android:id="@+id/btnSignin"
+                android:layout_width="match_parent"
+                android:layout_height="36.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/btn_green_bg"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="16.0dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44.0dip"
+                    android:gravity="center_vertical"
+                    android:text="没有账号?"
+                    android:textColor="@color/gray666" />
+
+                <TextView
+                    android:id="@+id/TextSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="免费注册"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/TextForgetPsd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="right|center"
+                    android:text="忘记密码？"
+                    android:textColor="@color/gray666" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlayoutNavbar"
+        android:layout_width="match_parent"
+        android:layout_height="44.0dip"
+        android:background="@drawable/nav_bg" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/tool_back" />
+
+        <TextView
+            android:id="@+id/textNavbarTitle"
+            style="@style/navigation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="44.0dip"
+            android:layout_marginLeft="44.0dip"
+            android:gravity="center_vertical"
+            android:text="用户登录" />
+
+        <ImageView
+            android:id="@+id/tab_main_nav_ivIcon"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tool_home"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llayoutOverView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44.0dip"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</RelativeLayout>

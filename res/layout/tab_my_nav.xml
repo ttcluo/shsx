@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50.0dip"
+    android:layout_weight="1.0"
+    
+    android:orientation="vertical" >
+<!-- android:background="@drawable/tab_main_nav_selector" -->
+    <ImageView
+        android:id="@+id/tab_my_nav_ivIcon"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4.0dip"
+        android:src="@drawable/tabbar_user_n" />
+
+    <TextView
+        android:id="@+id/tab_my_nav_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="我的"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1389936690000 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf /Users/luochuan/Documents/appcode/android-support-v7-appcompat/libs/android-support-v4.jar
+1443800497000 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf /Users/luochuan/Documents/appcode/FreshMarket/libs/android-support-v4.jar
+1443533768000 11082 0488dc80a5addc72b2fcb515f792a130c164ab5f /Users/luochuan/Documents/appcode/SMSSDK/libs/MobLogCollector.jar
+1444210125000 11082 0488dc80a5addc72b2fcb515f792a130c164ab5f /Users/luochuan/Documents/appcode/FreshMarket/libs/MobLogCollector.jar
+1444210125000 149816 23e791d96579e8c56fd11f1912130ff93c2d6289 /Users/luochuan/Documents/appcode/FreshMarket/libs/MobTools.jar
+1443535091000 149816 23e791d96579e8c56fd11f1912130ff93c2d6289 /Users/luochuan/Documents/appcode/SMSSDK/libs/MobTools.jar

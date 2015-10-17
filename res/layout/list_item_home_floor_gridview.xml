@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/split" />
+
+    <RelativeLayout
+        android:id="@+id/rlMian"
+        android:layout_width="match_parent"
+        android:layout_height="32.0dip"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tvTitel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="每日特价"
+            android:textColor="#ff00a653"
+            android:textSize="14.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:text="每天都有你要低价！"
+            android:textColor="#ffcccccc"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+<!--com.gem.tastyfood.widget.NoScrollGridView  -->
+
+    <com.shsx.freshmarket.autoview.NoScrollGridView
+        android:id="@+id/gvMian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_grid_top_left"
+        android:horizontalSpacing="0.0dip"
+        android:numColumns="2"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="0.5dip"
+        android:paddingTop="0.5dip"
+        android:verticalSpacing="0.0dip" />
+
+</LinearLayout>
